@@ -1,0 +1,168 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Kizard';
+    src: url(./assets/kizard.otf);
+}
+
+html,
+body{
+    scroll-behavior: smooth;
+    width: 100% !important;
+    overflow-x: hidden !important;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+.blob{
+    filter: blur( 10px );
+    /* color: #6358ee ; */
+
+}
+
+
+
+
+.name{
+    /* -webkit-text-stroke: 0.5px black; */
+    /* background: linear-gradient(to right, #f32170, #ff6b08);  */
+    background: linear-gradient(to top, #12fff7,#0072ff);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-weight: bolder;
+}
+
+/* .name-dark{
+    -webkit-text-stroke: 1px white;
+    -webkit-text-fill-color: transparent;
+    font-weight: bolder;
+} */
+
+
+.text-style{
+    font-family: 'Kizard';
+}
+
+
+
+.main-nav{
+    font-family: 'Kizard';
+    font-size: 1rem;
+    /* background-color: #f8ede30d; */
+    backdrop-filter: blur(0.4rem);
+}
+
+.mobile-nav{
+    font-family: 'Kizard';
+    font-size: 1rem;
+    /* background-color: #f8ede30d; */
+    backdrop-filter: blur(0.5rem);
+}
+
+.nav-item{
+    margin-right: 2rem;
+    font-size: 1.3rem;
+}
+
+
+.circle{
+    background: linear-gradient(to top ,#810CA8 50%,#3813C2 50%);
+    filter: blur(120px);
+    transform: rotate(220deg);
+
+        
+}
+
+.second-circle{
+    margin-top: -9rem ;
+}
+
+.nav-item{
+    margin-right: 2rem;
+    font-size: 1.3rem;
+}
+
+.contact-btn:hover{
+    box-shadow: 0 0 50px 20px #3813C2 ;
+    animation-delay: 2s;
+    transition: all 0.2s ease-in-out;
+}
+
+
+
+.scroll-icon{
+    position: relative;
+    margin: 2rem;
+    width: 1.7rem;
+    height: 3.3rem;
+    /* border: .3rem solid #d0bebe; */
+    border-radius: 2rem;
+}
+
+.scroll-icon.ex-1 .wheel{
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    width: .6rem;
+    height: .6rem;
+    /* background-color: #fff; */
+    transform: translate(-50%,0);
+    border-radius: .6rem;
+    animation: ex-1-wheel 1.7s ease-in-out infinite;
+}
+
+@keyframes ex-1-wheel {
+    0%{
+        transform: translate(-50%,0);
+    }
+    90%,100%{
+        transform: translate(-50%,150%);
+    }
+}
+
+
+/* About section */
+
+.about-content{
+    position: absolute;
+    top: 900px;
+}
+
+.text-glass{
+    /* background-color: #301e6766; */
+    /* background-color: #ffffff33; */
+    /* background: rgba(255, 255, 255, 0.2); */
+    /* background-color: #111928bf;; */
+    border-radius: 12px;
+    /* background-color: #ffffffbf; */
+    /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
+    /* box-shadow:  20px 20px 60px #d9bcb3; */
+    backdrop-filter: blur(5px) saturate(180%);
+    -webkit-backdrop-filter: blur(5px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.125);
+
+    /* background: rgba( 144, 19, 254, 0.05 ); */
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+
+}
+
+/* Project section */
+
+.project-image:hover{
+    transform: scale(1.1,1.1);
+    transition: all 0.5s ease-in-out;
+}
+
+.project-content{
+    position: absolute;
+    top: 1800px;
+}
+
+/* Contact Section */
